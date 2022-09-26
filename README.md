@@ -38,7 +38,6 @@ handled:
 
 ```rb
 Rails.application.routes.draw do
-  
   resources :birds, only: [:index, :show, :create]
 end
 ```
@@ -121,6 +120,7 @@ data about the request that we have access to:
     9:   def index
    10:     birds = Bird.all
 ```
+
 
 From the `byebug` session, let's see how we can get access to the data we need
 to handle this request. Remember, our goal in this action is to **create a new
